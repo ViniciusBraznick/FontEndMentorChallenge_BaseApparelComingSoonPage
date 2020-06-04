@@ -47,7 +47,8 @@ section{
     background-image: url(images/bg-pattern-desktop.svg);
     background-repeat: repeat;
     background-size: cover;
-    background-position: left;
+    background-position: left; 
+    padding-left: 2.5em;
 }
 
 header{
@@ -69,7 +70,7 @@ header{
 .texto_principal{
     position: relative;
     color: hsl(0, 36%, 70%);
-    padding-right: 9em;
+    padding-right: 6em;
 }
 
 h1{
@@ -87,7 +88,59 @@ h1::before{
 
 p{
     font-size: 19px;
+    margin-top: 2em;
 }
+
+.formulario {
+    margin-top: 2.5em;
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario input{
+    width: 90%;
+    height: 100%;
+    border: 0.1px solid hsl(0, 80%, 86%);
+    border-radius: 50px;
+    padding-left: 1.5em;
+}
+
+::-webkit-input-placeholder {
+    color: hsl(0, 36%, 70%);;
+ }
+ 
+ 
+
+.formulario button{
+    position: relative;
+    margin-left: -7em;
+    border-radius: 50px;
+    border: none;
+    height: 100%;
+    width: 7em;
+    background: linear-gradient(to right,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.formulario .error{
+    position: relative;
+    margin-left: -7em;
+    border: none;
+    height: 100%;
+    width: 8em;
+    display: flex;
+    align-items: center;
+}
+
+.error img{
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+
+
+
 
 
 
