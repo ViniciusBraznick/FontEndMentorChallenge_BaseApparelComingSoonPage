@@ -39,11 +39,57 @@
 
 
 section{
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
+    width: 80%;
+    margin: 0px auto;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: left;
 }
 
 header{
-    background-color: green;
+    width: 50%;
+    height: 120px;
+    margin-bottom: -150px;
+    display: flex;
+    align-items: center;
 }
+
+.box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_principal{
+    position: relative;
+    color: hsl(0, 36%, 70%);
+    padding-right: 9em;
+}
+
+h1{
+    color: hsl(0, 6%, 24%);
+    text-transform: uppercase;
+    font-size: 70px;
+    letter-spacing: 16px;
+}
+
+h1::before{
+    content: " we ' re ";
+    display: block;
+    color: hsl(0, 36%, 70%);
+}
+
+p{
+    font-size: 19px;
+}
+
+
+
+
+
