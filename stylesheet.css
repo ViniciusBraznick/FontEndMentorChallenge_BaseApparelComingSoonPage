@@ -137,30 +137,29 @@ p{
     border-color: hsl(0, 93%, 68%);
 }
 
-button:active{
+button:hover{
     box-shadow: -5px 5px 30px gray;
 }
 
-.error img{
+#erro{
     width: 20px;
     height: 20px;
-    display: block;
+    display: none;
 }
 
 .texto_erro{
-    color: hsl(0, 93%, 68%);
-    display: block;
-}
-
-.texto_principal::after{
-    content: "Please provied a valid email";
-    font-size: 16px;
-    display: block;
     position: relative;
-    margin: 10px 26px;
-    color: hsl(0, 93%, 68%);
+    margin: -25px 26px;  
 }
 
+#textErro{
+    display: none;
+}
+
+.texto_erro p {
+    font-size: 14px;
+    color: hsl(0, 93%, 68%);
+}
 
 
 
