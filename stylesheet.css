@@ -137,7 +137,7 @@ p{
     border-color: hsl(0, 93%, 68%);
 }
 
-button:focus{
+button:active{
     box-shadow: -5px 5px 30px gray;
 }
 
