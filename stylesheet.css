@@ -39,7 +39,6 @@
 
 
 section{
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -161,8 +160,74 @@ button:hover{
     color: hsl(0, 93%, 68%);
 }
 
+.foto .imagem2{
+    display: none;
+}
 
+@media (max-width: 375px){
+    .box{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .foto .imagem{
+        display: none;
+    }
+
+    .foto .imagem2{
+        display: block;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    header{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+        padding-left: 2.5em;
+    }
+
+    .texto_principal{
+        text-align: center;
+        padding: 1em;
+        margin-top: 2em;
+    }
+
+    h1{
+        text-transform: uppercase;
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+
+    p{
+        font-size: 16px;
+        margin-top: 2em;
+    }
+
+    .formulario input{
+        width: 100%;
+    }
+
+    section{
+        padding-left: 0;
+    }
+
+    .texto_erro{
+        margin-top: -1.5em;
+        margin-left: -6em;
+    }
+
+    
+} 
 
 
 
