@@ -1,13 +1,25 @@
-function validaEmail() {
-    email = document.getElementById('email').value
-    
-       if(email.search("@") != -1 && email.search(".com") != -1 && email.length > 5){
-            console.log('emial valido')
-            document.getElementById('email').value = ""
-            document.getElementById("erro").style.display = "none"
-            document.getElementById("textErro").style.display = "none"
-       } else{
-            document.getElementById("erro").style.display = "block"
-            document.getElementById("textErro").style.display = "block"
-       }
+const btnInput = document.querySelector('button')
+const email = document.querySelector('#email')
+const error = [document.querySelector('#textErro'), document.querySelector('#erro')]
+
+
+btnInput.addEventListener('click', () => {
+     if(email.value.search("@") != -1 && email.value.search(".com") != -1){
+          email.value = ''
+          adicionaErro('valid')
+     } else{
+          adicionaErro('invalid')
+     }
+})
+
+function adicionaErro(item) {
+     for (let index = 0; index < 2; index++) {
+          const element = error[index];
+          item == 'valid' ? element.classList.remove('invalidMail') : element.classList.add('invalidMail')
+     }
 }
+
+
+
+
+

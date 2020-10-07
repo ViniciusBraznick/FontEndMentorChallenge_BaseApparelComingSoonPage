@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-    <!-- Folha de estilo -->
+  
     <link rel="stylesheet" href="stylesheet.css">
-    <!-- Script JS-->
-    <script src="script_input.js"></script>
-    <!-- Fonte -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
 
@@ -31,15 +28,13 @@
                 </div>
                 
                 <div class="formulario">
-                    <input id="email" type="email" name="" placeholder="Email Address">
+                    <input id="email" type="email" name="email" placeholder="Email Address">
                     
                     <div class="error">
-                        <img id="erro"  src="images/icon-error.svg">
+                        <img alt="icon error" id="erro" class="img_erro"  src="images/icon-error.svg">
                     </div>
-                    
-                    <button onclick="validaEmail()"><img src="images/icon-arrow.svg"></button>
 
-                    
+                    <button><img src="images/icon-arrow.svg"></button>
                 </div>
 
                 <div id="textErro" class="texto_erro">
@@ -54,5 +49,6 @@
             </div>
         </div>
     </section>
+    <script src="script_input.js"></script>
 </body>
 </html>
